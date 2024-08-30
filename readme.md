@@ -18,12 +18,16 @@ Open the ```DataCapture``` project in Unity.
     > 1. File -> Build Settings -> Platform switch to Android -> Build
     > 2. Install apk file to device
 
-
+#### Exporting data
+* IOS
+    > Open Xcode -> Window -> Device and Simulators -> Select DataCapture ->Download Container
+* Android
+    > The data is stored in ```Internal storage/Android/data/com.DefaultCompany.DataCapture``` by default.
 
 ## Usage and data format
-When launching for the first time, allow camera permissions and location permissions. Press ```Start``` button to start a new sequence of capturing and ```Stop``` button to stop the sequence of capturing. The Red text shows the number of images that have been captured in this sequence. 
+When launching for the first time, allow camera permissions and location permissions. Press ```Start``` button to start a new sequence of capturing and ```Stop``` button to stop the sequence of capturing. The Red text shows the number of images that have been captured in this sequence.
 
-You can adjust the interval time of capturing in ```Build Settings -> Player Settings -> Time -> Fixed Timestamp```. The images and data files described below are stored locally in the device.
+You can adjust fixed timestamp with the input field when capturing, the input float means the interval time (in second) between two continuous frames, which is 1 by default. For example, if you enter 0.5, the program will capture at 2 fps. You can also set the interval time of capturing in ```Build Settings -> Player Settings -> Time -> Fixed Timestamp```. The images and data files described below are stored locally in the device.
 
 We provide txt data files, which include VIO, gyroscope, GPS, accelerometer and magnetometer data respectively. 
 

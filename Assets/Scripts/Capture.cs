@@ -24,6 +24,8 @@ public class Capture : MonoBehaviour
 
     [SerializeField] public Button stopButton;
 
+    [SerializeField] public InputField timestampInput;
+
     public ARCameraManager cameraManager;
 
     private int count;
@@ -47,6 +49,9 @@ public class Capture : MonoBehaviour
 
     void Start()
     {
+        timestampInput.text = Time.fixedDeltaTime.ToString();
+        timestampInput.onEndEdit.AddListener(HandleEndEdit);
+
         startButton.onClick.AddListener(TaskStart);
 
         stopButton.onClick.AddListener(TaskStop);
@@ -228,5 +233,10 @@ public class Capture : MonoBehaviour
     void TaskStop()
     {
         captureStop = true;
+    }
+
+    void HandleEndEdit(string input)
+    {
+        Time.fixedDeltaTime = Convert.ToSingle(input);
     }
 }
