@@ -71,3 +71,25 @@ We provide txt data files, which include VIO, gyroscope, GPS, accelerometer and 
 
   ```trueHeading``` is the heading in degrees relative to the geographic North Pole.
 
+## Acknowledgments
+#### Reference
+Our Data Capture app is used in [Paper](https://ieeexplore.ieee.org/document/10536574) if you find this repo helpful, please cite:
+<h3 id="citation">Citation</h3>
+  <pre class="citation-code"><code><span>@inproceedings{liu2024marvin,
+  title={MARViN: Mobile AR Dataset with Visual-Inertial Data},
+  author={Liu, Changkun and Zhao, Yukun and Braud, Tristan},
+  booktitle={2024 IEEE Conference on Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW)},
+  pages={532--538},
+  year={2024},
+  organization={IEEE}
+}}</code></pre>
+
+#### MARViN: Mobile AR Dataset with Visual-Inertial Data
+
+##### [Homepage](https://lck666666.github.io/research/MARViN/index.html) | [Paper](https://ieeexplore.ieee.org/document/10536574)
+
+**MARViN: Mobile AR Dataset with Visual-Inertial Data** <br>
+[Changkun Liu](https://lck666666.github.io)\*, [Yukun Zhao](https://scholar.google.com/citations?view_op=list_works&hl=zh-CN&user=NcLael4AAAAJ)\* and [Tristan Braud](https://braudt.people.ust.hk/index.html) <br>
+<em>* equal contribution</em><br>
+The Hong Kong University of Science and Technology<br>
+Virtual Reality and 3D User Interfaces Abstracts and Workshops (VRW), 2024<br>
